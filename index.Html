@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="banana"></div>
+        <div id="num"></div>
+        <button id="btn" onclick="count()">click</button>
+    </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+  body {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 200px;
+    height: 50px;
+  }
+
+#btn{
+    background-color: aqua;
+}
+
+</style>
+
+<script>
+    let number = 0;
+
+    function count() {
+        number ++;
+        document.getElementById('num').innerText = number;
+    }
+    
+    document.getElementById('banana').innerText = ('b' + 'a' + + 'a' + 'a').toLowerCase();
+</script>
